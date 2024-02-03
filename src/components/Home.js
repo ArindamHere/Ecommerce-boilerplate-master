@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import Product from './Product';
 
 function Home() {
     const navigate = useNavigate();
@@ -14,6 +15,7 @@ function Home() {
     return (
         <div>
             This is Home
+            <Product />
         </div>
     )
 }
