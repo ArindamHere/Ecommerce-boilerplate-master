@@ -4,10 +4,20 @@ import productContext from '../context/product/productContext';
 
 function ProductItem(props) {
 
+    const { product } = props;
     const context = useContext(productContext);
     const { addToCart, addTofavourites } = context;
 
-    const { product } = props;
+    const handleAddCart = (e) => {
+        e.preventDefault();
+        addToCart(product.id, product.title, product.image, product.amount);
+    }
+
+    const handleAddFavourite = (e) => {
+        e.preventDefault();
+        addTofavourites(product.id, product.title, product.image, product.amount);
+    }
+
 
     return (
         <div className='col-md-3 my-3'>
@@ -26,10 +36,10 @@ function ProductItem(props) {
                         <span class="badge text-bg-success">{product.rating}</span>
                     </div>
                     <div className='d-flex justify-content-between align-items-center'>
-                        <button onClick={addTofavourites}>
+                        <button onClick={handleAddFavourite}>
                             <i class="fa-regular fa-heart fa-lg"></i>
                         </button>
-                        <button onClick={addToCart}>
+                        <button onClick={handleAddCart}>
                             <i class="fa-solid fa-cart-shopping fa-lg"></i>
                         </button>
 

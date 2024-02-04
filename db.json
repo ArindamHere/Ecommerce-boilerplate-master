@@ -120,6 +120,32 @@
       "rating": "4.0"
     }
   ],
-  "orders": [],
-  "favourites": []
+  "orders": [
+    {
+      "id": "6",
+      "title": "Jockey Men's Cotton T-Shirt",
+      "image": "https://i.pinimg.com/564x/7f/c0/84/7fc084dbec9b6c0ce19ab73b25bcba7f.jpg",
+      "amount": "600"
+    },
+    {
+      "id": "8",
+      "title": "Scott International Men's Regular Fit T-Shirt (Pack of 3)",
+      "image": "https://i.pinimg.com/564x/b9/83/a7/b983a7e4e9a4a05ee8ae8333f1c7b2d8.jpg",
+      "amount": "100"
+    },
+    {
+      "id": "11",
+      "title": "Jockey Men's Regular Fit Round Neck Half Sleeved T-Shirt",
+      "image": "https://i.pinimg.com/564x/5a/cc/7f/5acc7f5af23bee76168f0f1fd24c75b4.jpg",
+      "amount": "700"
+    }
+  ],
+  "favourites": [
+    {
+      "id": "7",
+      "title": "AMERICAN CREW - Men's Regular Fit Polos",
+      "image": "https://i.pinimg.com/originals/25/0d/a3/250da32c889b624849bf828ae2ece420.jpg",
+      "amount": "300"
+    }
+  ]
 }
