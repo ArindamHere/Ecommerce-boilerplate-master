@@ -26,10 +26,13 @@ function Navbar() {
 
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0 p-2">
                             <li className="nav-item">
+                                <Link className={`nav-link ${location.pathname === "/wishlist" ? "active" : ""}`} to="/wishlist"><i class="fa-regular fa-heart fa-xl" style={{ color: "#ff0000" }}></i></Link>
+                            </li>
+                            <li className="nav-item">
                                 <Link className={`nav-link ${location.pathname === "/login" ? "active" : ""}`} to="/login">Login</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className={`nav-link ${location.pathname === "/cart" ? "active" : ""}`} to="/cart">My Cart</Link>
+                                <Link className={`nav-link ${location.pathname === "/cart" ? "active" : ""}`} to="/cart"><i class="fa-solid fa-cart-plus fa-xl" style={{ color: "#ffff80" }}></i></Link>
                             </li>
                         </ul>
 

@@ -14,7 +14,6 @@ function Home() {
 
     return (
         <div>
-            This is Home
             <Product />
         </div>
     )
