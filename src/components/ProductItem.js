@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom';
+import productContext from '../context/product/productContext';
 
 function ProductItem(props) {
+
+    const context = useContext(productContext);
+    const { addToCart, addTofavourites } = context;
 
     const { product } = props;
 
@@ -22,12 +26,13 @@ function ProductItem(props) {
                         <span class="badge text-bg-success">{product.rating}</span>
                     </div>
                     <div className='d-flex justify-content-between align-items-center'>
-                        <Link to="/wishlist" className='dark'>
+                        <button onClick={addTofavourites}>
                             <i class="fa-regular fa-heart fa-lg"></i>
-                        </Link>
-                        <Link to="/cart">
+                        </button>
+                        <button onClick={addToCart}>
                             <i class="fa-solid fa-cart-shopping fa-lg"></i>
-                        </Link>
+                        </button>
+
                     </div>
                 </div>
             </div>
